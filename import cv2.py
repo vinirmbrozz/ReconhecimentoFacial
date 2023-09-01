@@ -16,7 +16,7 @@ if webcam.isOpened():
             for rosto in listaRostos.detections:
                 desenho.draw_detection(frame, rosto)
 
-        cv2.imshow("Reconhecimento Facil", frame)
+        cv2.imshow("Reconhecimento Facial", frame)
         if cv2.waitKey(2) == 27:
             break
     cv2.imwrite("Foto.png", frame)
